@@ -32,41 +32,39 @@ header {
       margin: 0 auto;
     }
 }
+
 .centra {
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: relative; /* AGGIUNGI QUESTO */
+  position: relative;
+}
+
+.telefono-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* o la larghezza massima che preferisci */
+  margin: 0 auto;
 }
 
 .Iphone {
-  background-color: blue;
-  width: 200px;
-  height: 100px;
   position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.3); /* blu semi-trasparente per vedere l'immagine sotto */
   display: flex;
-  flex-direction: column; 
-  z-index: 1; /* AGGIUNGI QUESTO */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  pointer-events: none; /* opzionale: lascia cliccabile l'immagine sotto */
 }
 
 .telefono {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
   position: relative;
-  z-index: 0; /* OPZIONALE */
+  z-index: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
