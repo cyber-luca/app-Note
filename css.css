@@ -37,7 +37,7 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  border-radius:12px;
+  border-radius: 12px;
 }
 
 /* IMMAGINE TELEFONO */
@@ -62,21 +62,5 @@ header {
 }
 
 /* Galaxy Tab S9+ landscape: 1752x2800 px, pixel ratio 2 */
-@media only screen 
-  and (min-device-width: 1752px) 
-  and (max-device-width: 2800px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-      background-color: #f5f5f5;
-    }
-    .telefono-wrapper {
-      max-width: 1200px;
-    }
-    .telefono {
-      width: 50vw;
-      max-width: 1200px;
-      height: auto;
-      margin: *
-}
-      
+@*
+
