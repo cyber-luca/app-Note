@@ -1,10 +1,12 @@
 /* HEADER */
 header {
   width: 100%;
-  height: 20%;
+  min-height: 70px;
   display: flex;
   justify-content: center; /* centra orizzontalmente */
   align-items: center;     /* centra verticalmente */
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 /* CONTENITORE PRINCIPALE */
@@ -13,31 +15,42 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px); /* meno l'header */
   position: relative;
+  background: #f3f3f3;
 }
 
 /* WRAPPER PER TELEFONO E OVERLAY */
 .telefono-wrapper {
   position: relative;
   width: 100%;
-  max-width: 500px; /* puoi modificare la max-width se serve */
+  max-width: 500px;
   margin: 0 auto;
+  aspect-ratio: 9 / 19.5; /* proporzioni tipiche iPhone XS Max */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* SOVRAPPOSIZIONE IPHONE */
 .Iphone {
   position: absolute;
-  top: 0; left: 0;
+  top: 10%;
+  left: 10%;
   width: 80%;
   height: 80%;
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.88); /* rosso un po' trasparente */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  border-radius: 12px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.13);
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+  outline: none;
 }
 
 /* IMMAGINE TELEFONO */
@@ -47,20 +60,8 @@ header {
   display: block;
   position: relative;
   z-index: 0;
+  border-radius: 20px;
+  box-shadow: 0 2px 20px rgba(0,*
 }
 
-/* RESPONSIVE TABLET */
-@media (min-width: 600px) and (max-width: 1024px) {
-  .telefono-wrapper {
-    max-width: 500px;
-  }
-  .telefono {
-    width: 70vw;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-}
 
-/* Galaxy Tab S9+ landscape: 1752x2800 px, pixel ratio 2 */
-@*
-
