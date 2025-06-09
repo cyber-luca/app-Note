@@ -1,4 +1,4 @@
 .telefono{
   display:flex;
-  justify-items:center;
+  justify-self:center;
 }
