@@ -4,23 +4,11 @@
   width: 100%;
 }
 
-@media only screen 
-  and (min-device-width: 1752px) 
-  and (max-device-width: 2800px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    /* CSS specifico per Galaxy Tab S9+ in orizzontale */
-    body {
-      background-color: #f5f5f5;
-    }
-    .telefono {
-      width: 60vw;
-      max-width: 900px;
-      min-width: 600px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
+.telefono {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 header {
@@ -38,25 +26,22 @@ header {
     margin: 0 auto;
     display: block;
   }
+}
+
+/* Galaxy Tab S9+ landscape: 1752x2800 px, pixel ratio 2 */
 @media only screen 
   and (min-device-width: 1752px) 
   and (max-device-width: 2800px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
-    /* CSS specifico per Galaxy Tab S9+ in orizzontale */
     body {
-      /* Esempio di stile */
       background-color: #f5f5f5;
+    }
+    .telefono {
+      width: 50vw;   /* Adatta la larghezza al meglio per il Galaxy Tab S9+ */
+      max-width: 1200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
 }
-  @media only screen 
-  and (min-device-width: 1752px) 
-  and (max-device-width: 2800px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    /* CSS specifico per Galaxy Tab S9+ in orizzontale */
-    body {
-      background-color: #f5f5f5;
-    }
-   
-
