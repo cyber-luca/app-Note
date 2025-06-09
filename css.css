@@ -17,3 +17,21 @@ header {
   align-items: center;     /* centra verticalmente */
 }
 
+@media (min-width: 600px) and (max-width: 1024px) {
+  .telefono {
+    width: 70vw;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  header {
+    height: 15%;
+    font-size: 1.5em;
+  }
+
+  .titolo {
+    font-size: 2em;
+    padding: 10px 0;
+  }
+}
