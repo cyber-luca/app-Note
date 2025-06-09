@@ -31,7 +31,7 @@ header {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 255, 0.3); /* blu semi-trasparente */
+  background-color: withe;
   display: flex;
   flex-direction: column;
   justify-content: center;
