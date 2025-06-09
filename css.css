@@ -9,6 +9,8 @@
   height: auto;
   display: block;
   margin: 0 auto;
+  display:flex;
+  position:relative;
 }
 
 header {
