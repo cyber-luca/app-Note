@@ -1,12 +1,10 @@
 /* HEADER */
 header {
   width: 100%;
-  min-height: 70px;
+  height: 20%;
   display: flex;
   justify-content: center; /* centra orizzontalmente */
   align-items: center;     /* centra verticalmente */
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 /* CONTENITORE PRINCIPALE */
@@ -15,42 +13,32 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: calc(100vh - 70px); /* meno l'header */
+  min-height: 100vh;
   position: relative;
-  background: #f3f3f3;
 }
 
 /* WRAPPER PER TELEFONO E OVERLAY */
 .telefono-wrapper {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 500px; /* puoi modificare la max-width se serve */
   margin: 0 auto;
-  aspect-ratio: 9 / 19.5; /* proporzioni tipiche iPhone XS Max */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* SOVRAPPOSIZIONE IPHONE */
 .Iphone {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 0;
+  left: 0;
   width: 80%;
   height: 80%;
-  background-color: rgba(255, 0, 0, 0.88); /* rosso un po' trasparente */
+  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.13);
-  color: #fff;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  text-align: center;
-  outline: none;
+  border-radius: 12px;
 }
 
 /* IMMAGINE TELEFONO */
@@ -60,33 +48,19 @@ header {
   display: block;
   position: relative;
   z-index: 0;
-  border-radius: 20px;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.15);
 }
 
-/* Responsive Tablet */
+/* RESPONSIVE TABLET */
 @media (min-width: 600px) and (max-width: 1024px) {
   .telefono-wrapper {
-    max-width: 400px;
+    max-width: 500px;
   }
   .telefono {
-    width: 90vw;
-    max-width: 400px;
+    width: 70vw;
+    max-width: 500px;
     margin: 0 auto;
   }
 }
 
-/* Responsive Mobile */
-@media (max-width: 599px) {
-  .telefono-wrapper {
-    max-width: 95vw;
-  }
-  .telefono {
-    width: 100vw;
-    max-width: 95vw;
-  }
-  .Iphone {
-    font-size: 1rem;
-    padding: 10px;
-  }
-}
+/* Galaxy Tab S9+ landscape: 1752x2800 px, pixel ratio 2 */
+/* Qui puoi aggiungere altre regole specifiche per dispositivi se necessario */
