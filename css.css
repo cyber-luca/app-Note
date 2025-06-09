@@ -1,14 +1,3 @@
-
-
-.telefono {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  display:flex;
-  position:relative;
-}
-
 header {
   width: 100%;
   height: 20%;
@@ -43,10 +32,13 @@ header {
       margin: 0 auto;
     }
 }
+ddddddddddddddddddddddddddddddddd
 
 .centra {
-  position: relative;
-  height: 400px; /* oppure quello che vuoi */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative; /* AGGIUNGI QUESTO */
 }
 
 .Iphone {
@@ -55,7 +47,17 @@ header {
   height: 100%;
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  z-index: 1; /* AGGIUNGI QUESTO */
+}
+
+.telefono {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0; /* OPZIONALE */
 }
 
 
