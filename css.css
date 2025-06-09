@@ -8,6 +8,9 @@ header{
   height:20%;
   display:flex;
   justify-content:center;
-  text-align:center;
   background-color:blue;
+}
+
+.titolo{
+  
 }
