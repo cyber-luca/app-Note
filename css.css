@@ -1,6 +1,12 @@
-.telefono{
-  display:flex;
-  justify-items:center;
+.centra {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.telefono {
+  max-width: 100%;
+  height: auto;
 }
 
 header {
