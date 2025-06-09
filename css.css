@@ -1,7 +1,6 @@
 .telefono{
   display:flex;
-  justify-self:center;
-  justity-items:center;
+  justify-content:center;
 }
 
 header {
