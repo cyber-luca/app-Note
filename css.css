@@ -1,1 +1,4 @@
-
+.telefono{
+  display:flex;
+  justify-self:center;
+}
