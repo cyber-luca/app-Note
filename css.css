@@ -37,8 +37,7 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  color: #fff; /* testo bianco per leggibilità */
-  pointer-events: none; /* opzionale: lascia cliccabile l'immagine sotto */
+  border-radius:12px;
 }
 
 /* IMMAGINE TELEFONO */
