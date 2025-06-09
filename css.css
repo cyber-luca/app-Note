@@ -46,6 +46,14 @@ header {
     }
 }
 
+.Iphone{
+  background-color:withe;
+  width:50px;
+  height:200px;
+  position:relative;
+  display:flex;
+  flex-direction:colums;
+}
 
 
 
