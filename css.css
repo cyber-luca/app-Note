@@ -8,4 +8,5 @@ header{
   height:200px;
   display:flex;
   justify-self:center;
+  text-align:center;
 }
